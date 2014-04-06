@@ -1,11 +1,22 @@
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<link rel="shortcut icon" href="" />
-		<title>IdeaVine</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>IdeaVine</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/jumbotron.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css"> 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script>
@@ -28,10 +39,7 @@
 			});
 		</script>
 	</head>
-	<body style="margin:0px;">
-	<div class="container">
-		<div class="navbar navbar-default navbar-fixed-top">
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,31 +48,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="<b>idea</b>vine" height="20"></a>
-          <li><a href="about.html">About</a></li>
-            </ul></div>
+          <a class="navbar-brand" href="#"><img src="assets/logo.png" height=20></a>
         </div>
         <div class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" role="form">
-            <!--<div class="form-group">
+            <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
             </div>
             <div class="form-group">
               <input type="password" placeholder="Password" class="form-control">
-            </div>-->
-            <button class="btn btn-success" href="//twitter.com/oauth">Sign in</button>
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
-	</div>
-	</div>
-        </div>
-        <div class="container">
-            <br/><br/><br/><br/><br/>
-        <div class="jumbotron">
+    <div class="jumbotron">
+      <div class="container">
 		<form role="form" id="add_form">
 		  <div class="form-group">
 		    <label for="exampleInputEmail1"><h1>What's your idea?</h1></label>
@@ -73,8 +73,9 @@
 		  
 		  <button type="submit" class="btn btn-primary" id="add_idea">Add Idea</button>
 		</form>
-		<div class="panel panel-info" id="add_response"><div class="panel-heading">Nice</div><div class="panel-body">Your idea was added. Good work buddy!</div></div></div>
+		<div class="panel panel-info" id="add_response"><div class="panel-heading">Nice</div><div class="panel-body">Your idea was added. Good work buddy!</div></div></div></div>
 		<br>
+    <div class="container"><div class="row">
 		<h2>All the Ideas</h2>
 		<table class="table table-striped">
 			<tbody>
