@@ -18,6 +18,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="js/http_utils.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script>
 			$(document).ready(function(){
@@ -34,6 +35,7 @@
 					e.preventDefault();
 					$('#add_form').slideUp();
 					$('#add_response').slideDown();
+                    post('http://ideavine.co/backend/ideavine/idea/save', "POST", '{"title": name,"desc": desc,"userId": "1","fullText": "I can now write long posts!"}');
 				});
 
 			});
@@ -67,8 +69,11 @@
       <div class="container">
 		<form role="form" id="add_form">
 		  <div class="form-group">
-		    <label for="exampleInputEmail1"><h1>What's your idea?</h1></label>
-		    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tell me your idea in 140 characters or less">
+		    <h1>What's your idea?</h1>
+		    <input type="email" class="form-control" id="name" placeholder="Give me a name...">
+		  </div>
+          <div class="form-group">
+		    <input type="email" class="form-control" id="desc" placeholder="Now describe it even more....">
 		  </div>
 		  
 		  <button type="submit" class="btn btn-primary" id="add_idea">Add Idea</button>
