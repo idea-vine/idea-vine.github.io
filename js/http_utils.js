@@ -19,11 +19,11 @@ function post(path, type, data) {
       if (request.status==200)
         {// 200 = OK
         // ...our code here...
-        alert('ok');
+        //alert('ok');
         }
       else
         {
-        alert("Problem retrieving XML data");
+        //alert("Problem retrieving XML data");
         }
       }
     }
