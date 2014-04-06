@@ -5,11 +5,12 @@ function post(path, type, data) {
     request.open(type, path, true);
     //request.setRequestHeader("Referer", "http://www.google.com");
     //request.setRequestHeader("User-Agent", "Mozilla/5.0");
-    //request.setRequestHeader("Accept","application/json");
+    request.setRequestHeader("Accept","application/json");
     request.setRequestHeader("Content-Type","application/json");
-    request.setRequestHeader("Access-Control-Allow-Origin", "http://ideavine.co");
-    request.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-    request.setRequestHeader('X-Alt-Referer', 'http://www.google.com');
+    //request.setRequestHeader("Access-Control-Allow-Origin", "http://ideavine.co");
+    //request.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+    //request.setRequestHeader('X-Alt-Referer', 'http://www.google.com');
+    
     request.send(data);
         function state_change()
     {
